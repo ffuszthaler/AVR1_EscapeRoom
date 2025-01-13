@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 0611f55ed2d92e41b6d17cf9e64f7e85
       Path: Events\Default Work Unit\Play_GlobalBGMusic
       maxAttenuation: 0
-      maxDuration: 765.7097
-      minDuration: 765.7097
+      maxDuration: 447.35544
+      minDuration: 447.35544
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
