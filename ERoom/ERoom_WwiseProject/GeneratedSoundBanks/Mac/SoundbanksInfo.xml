@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A28B170A-5AEE-CEA0-0A1A-8463F4CA9BE1}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="81614794" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>suspense-two-minds-179389.wav</ShortName>
+					<CachePath>SFX/suspense-two-minds-179389_818F3B66.wem</CachePath>
+				</File>
+				<File Id="91624080" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>horror-background-atmosphere-11-240870.wav</ShortName>
+					<CachePath>SFX/horror-background-atmosphere-11-240870_818F3B66.wem</CachePath>
+				</File>
+				<File Id="287649892" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>tense-horror-background-174809.wav</ShortName>
+					<CachePath>SFX/tense-horror-background-174809_818F3B66.wem</CachePath>
+				</File>
+				<File Id="308538163" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>horror-background-tension-254885.wav</ShortName>
+					<CachePath>SFX/horror-background-tension-254885_818F3B66.wem</CachePath>
+				</File>
+				<File Id="340003423" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>scary-clown-horror-172681.wav</ShortName>
+					<CachePath>SFX/scary-clown-horror-172681_818F3B66.wem</CachePath>
+				</File>
+				<File Id="474699405" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dark-and-creepy-piano-horror-music-loop-244576.wav</ShortName>
+					<CachePath>SFX/dark-and-creepy-piano-horror-music-loop-244576_818F3B66.wem</CachePath>
+				</File>
+				<File Id="621302694" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009.wav</ShortName>
+					<CachePath>SFX/367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_818F3B66.wem</CachePath>
+				</File>
+				<File Id="987809748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pastel-memories-of-a-hazy-morning-200486.wav</ShortName>
+					<CachePath>SFX/pastel-memories-of-a-hazy-morning-200486_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1325891248" Name="Play_ElectricHumming" DurationType="OneShot" DurationMin="120.49067" DurationMax="120.49067">
+					<MediaRefs>
+						<MediaRef Id="621302694"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="217822611" Name="Play_GlobalBGMusic" DurationType="OneShot" DurationMin="765.7097" DurationMax="765.7097">
+					<MediaRefs>
+						<MediaRef Id="81614794"/>
+						<MediaRef Id="91624080"/>
+						<MediaRef Id="287649892"/>
+						<MediaRef Id="308538163"/>
+						<MediaRef Id="340003423"/>
+						<MediaRef Id="474699405"/>
+						<MediaRef Id="987809748"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{2699704A-AA08-B0CB-E5C1-5E95A91F5232}</FileHash>
+</SoundBanksInfo>

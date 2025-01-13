@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_GlobalBGMusic" ID="{5EF51106-D9D2-412E-B6D1-7CF9E64F7E85}">
+					<ChildrenList>
+						<Action Name="" ID="{3C5E845F-AC97-403A-981B-52541949F6FB}" ShortID="1036086151">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GlobalBGMusic" ID="{EE30E082-0677-4527-8A00-389368777513}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ElectricHumming" ID="{6EC7DD87-22AE-4F90-98E1-585A72009CF4}">
+					<ChildrenList>
+						<Action Name="" ID="{BA0062E3-64E3-4512-AC73-EF632EFC8AB5}" ShortID="832047914">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ElectricHumming" ID="{E04FA1B7-2C52-46BA-BE47-A855233018C2}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

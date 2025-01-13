@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404f05c4c317fc74fa519951ce29ae9f, type: 3}
+  m_Name: 5EF51106-D9D2-412E-B6D1-7CF9E64F7E85
+  m_EditorClassIdentifier: 
+  objectName: Play_GlobalBGMusic
+  id: 217822611
+  guid: 5EF51106-D9D2-412E-B6D1-7CF9E64F7E85

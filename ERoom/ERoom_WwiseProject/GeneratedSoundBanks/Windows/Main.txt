@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	217822611	Play_GlobalBGMusic			\Default Work Unit\Play_GlobalBGMusic	
+	1325891248	Play_ElectricHumming			\Default Work Unit\Play_ElectricHumming	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	91624080	horror-background-atmosphere-11-240870	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\horror-background-atmosphere-11-240870_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\horror-background-atmosphere-11-240870		13989984
+	308538163	horror-background-tension-254885	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\horror-background-tension-254885_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\horror-background-tension-254885		19408992
+	474699405	dark-and-creepy-piano-horror-music-loop-244576	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\dark-and-creepy-piano-horror-music-loop-244576_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\dark-and-creepy-piano-horror-music-loop-244576		18243168
+	621302694	ElectricHumming	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ElectricHumming		23134304
+	987809748	pastel-memories-of-a-hazy-morning-200486	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\pastel-memories-of-a-hazy-morning-200486_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\pastel-memories-of-a-hazy-morning-200486		28408416
+
