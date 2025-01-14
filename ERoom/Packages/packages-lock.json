@@ -222,6 +222,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "dev.ffuszthaler.dictionary-kvp": {
+      "version": "file:dev.ffuszthaler.dictionary-kvp",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

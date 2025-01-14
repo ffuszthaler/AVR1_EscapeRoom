@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DefaultNamespace
+namespace Dev.Ffuszthaler.DictionaryKVP
 {
     public static class DictionaryExt
     {

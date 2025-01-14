@@ -1,0 +1,11 @@
+{
+  "name": "dev.ffuszthaler.dictionary-kvp",
+  "version": "0.1.0",
+  "description": "Adds an extension function for dictionaries for key-value pairs.",
+  "displayName": "DictionaryKVP",
+  "unity": "2020.1",
+  "author": {
+    "name": "Florian Fussthaler"
+  },
+  "keywords": ["dictionary", "utility", "qol"]
+}
