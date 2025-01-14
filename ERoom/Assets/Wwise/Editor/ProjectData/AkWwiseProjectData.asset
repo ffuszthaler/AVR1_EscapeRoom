@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 860befcba97ce24ea4d12ab34b34d97e
     GuidInternal: 
-    m_lastTime: -8584648405614741904
+    m_lastTime: -8584647655091176647
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f4877ab29f810749b1e217841dd72c3b
     GuidInternal: 
-    m_lastTime: -8584648405615794408
+    m_lastTime: -8584647638639026256
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Renderer
+      guid: 45c64d3d3580874d934ff19f17baefbd
+      id: 1720402352
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f4877ab29f810749b1e217841dd72c3b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Renderer
+        ObjectType: 2
+        guid: 45c64d3d3580874d934ff19f17baefbd
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Renderer
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 8685c80a358a82488d3917df3f73299a
     GuidInternal: 
-    m_lastTime: -8584648345522921111
+    m_lastTime: -8584647655091191950
     List:
     - name: Main
       guid: fba717b59f517449babaedbe78c35130
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9ce17496c42964d85f1aaf71ba43ff4
     GuidInternal: 
-    m_lastTime: -8584648345522946155
+    m_lastTime: -8584647655091318411
     List:
     - name: Play_ElectricHumming
       guid: 87ddc76eae22904f98e1585a72009cf4
@@ -110,9 +127,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 87ddc76eae22904f98e1585a72009cf4
       Path: Events\Default Work Unit\Play_ElectricHumming
-      maxAttenuation: 0
-      maxDuration: 120.49067
-      minDuration: 120.49067
+      maxAttenuation: 4
+      maxDuration: -1
+      minDuration: -1
     - name: Play_GlobalBGMusic
       guid: 0611f55ed2d92e41b6d17cf9e64f7e85
       id: 217822611
@@ -142,7 +159,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 70d450963a6e2c4dbe70e7c2f7b0162f
     GuidInternal: 
-    m_lastTime: -8584648405615450481
+    m_lastTime: -8584647655091318411
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -156,7 +173,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 590d9c43e548bd4e9c2b171c5164b19c
     GuidInternal: 
-    m_lastTime: -8584648405616225361
+    m_lastTime: -8584647655091186838
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -170,7 +187,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 10032867478cf645b787f7e80e1687fb
     GuidInternal: 
-    m_lastTime: -8584648405615889905
+    m_lastTime: -8584647655091181743
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -184,7 +201,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 6b0f26367faf0e4a9df3d28ed257855b
     GuidInternal: 
-    m_lastTime: -8584648405613896447
+    m_lastTime: -8584647655091181743
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0600000007000000090000000a00000024000000250000008600000087000000

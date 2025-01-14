@@ -9,20 +9,30 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E1EECF3B-B8A4-06CB-B70E-D12ED2BD17C4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="809435187" Name="Auro Headphone (Custom)" LibName="Auro Headphone" LibId="72093811"/>
+				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="1720402352" Name="Renderer">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="809435187"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3B2661E1-429D-3D37-CB7F-56C666EE8A4A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A54966DD-5A51-F4B3-083D-534C0F334DC9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -48,7 +58,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1325891248" Name="Play_ElectricHumming" DurationType="Infinite">
+				<Event Id="1325891248" Name="Play_ElectricHumming" MaxAttenuation="4" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="621302694"/>
 					</MediaRefs>
@@ -64,5 +74,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DC315233-1018-6E4A-F32F-8C71B65D518C}</FileHash>
+	<FileHash>{80492DF7-450F-037E-E9A9-DEC67127F790}</FileHash>
 </SoundBanksInfo>

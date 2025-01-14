@@ -3,6 +3,7 @@
 	<PluginLibs>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
+		<PluginLib LibName="Auro Headphone" LibId="72093811" Type="Effect" DLL="Auro" StaticLib="AuroHeadphoneFX"/>
 	</PluginLibs>
-	<FileHash>{802CB29E-2A07-E260-0929-231C7A375A1D}</FileHash>
+	<FileHash>{07E4BB77-1FBE-E6E1-5B9A-FC30DC63B7B3}</FileHash>
 </PluginInfo>

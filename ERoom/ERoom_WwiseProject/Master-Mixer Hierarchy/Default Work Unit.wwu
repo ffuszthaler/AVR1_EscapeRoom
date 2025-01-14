@@ -9,6 +9,34 @@
 							<ObjectRef Name="System" ID="{C769BA51-4F7B-4FAE-BDE5-4C5A2AEA6008}" WorkUnitID="{A9AFACD1-9D35-4DAF-95C8-769097F7CE3A}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>803467534</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{5FCDF17F-085D-48BE-8D97-AE2B3389E87F}" ShortID="511718346">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Auro Headphone (Custom)" ID="{55E3D700-8CFA-4006-AAE6-F54C005ADE28}" ShortID="809435187" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3"/>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
