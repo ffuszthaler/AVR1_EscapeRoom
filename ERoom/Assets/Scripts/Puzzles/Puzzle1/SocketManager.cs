@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -45,7 +46,7 @@ public class SocketManager : MonoBehaviour
         {
             XRGrabInteractable interactable = args.interactableObject as XRGrabInteractable;
 
-            if (interactable != null && IsValidInteraction(socket.name, interactable.name))
+            if (interactable != null && socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
             {
                 Debug.Log($"Correct item '{interactable.name}' socketed in '{socket.name}'.");
 
@@ -75,12 +76,6 @@ public class SocketManager : MonoBehaviour
         }
     }
 
-    private bool IsValidInteraction(string socketName, string interactableName)
-    {
-        // Check if the socket name exists in the mapping and matches the interactable name
-        return socketToInteractableMapping.TryGetValue(socketName, out string validInteractable) &&
-               validInteractable == interactableName;
-    }
 
     private bool AreAllSocketsCorrect()
     {
@@ -89,7 +84,7 @@ public class SocketManager : MonoBehaviour
             // Check the selected interactable in each socket
             if (socket.GetOldestInteractableSelected() is XRGrabInteractable interactable)
             {
-                if (!IsValidInteraction(socket.name, interactable.name))
+                if (!socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
                 {
                     return false;
                 }
