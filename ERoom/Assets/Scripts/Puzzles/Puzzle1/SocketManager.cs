@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Dev.Ffuszthaler.DictionaryKVP;
+using Unity.XR.CoreUtils.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -10,13 +11,10 @@ public class SocketManager : MonoBehaviour
 {
     [SerializeField] private List<XRSocketInteractor> socketInteractors; // List of child sockets to validate
 
-    [SerializeField] private Dictionary<string, string> socketToInteractableMapping = new Dictionary<string, string>
-    {
-        // Define socket-to-interactable mappings (SocketName -> InteractableName)
-        { "I2_Socket", "I2_Object" },
-        { "J3_Socket", "J3_Object" },
-        { "K4_Socket", "K4_Object" }
-    };
+    [SerializeField] private SerializableDictionary<string, string> socketToInteractableMapping =
+        new SerializableDictionary<string, string>();
+
+    [SerializeField] private bool lockWrongSockets = true;
 
     private void OnEnable()
     {
@@ -46,7 +44,8 @@ public class SocketManager : MonoBehaviour
         {
             XRGrabInteractable interactable = args.interactableObject as XRGrabInteractable;
 
-            if (interactable != null && socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
+            if (interactable != null &&
+                socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
             {
                 Debug.Log($"Correct item '{interactable.name}' socketed in '{socket.name}'.");
 
@@ -60,8 +59,14 @@ public class SocketManager : MonoBehaviour
             else
             {
                 Debug.LogWarning($"Incorrect item '{interactable?.name}' attempted to be socketed in '{socket.name}'.");
-                // Force release the incorrect interactable
-                socket.interactionManager.SelectExit(socket, args.interactableObject);
+                // // Force release the incorrect interactable
+                // socket.interactionManager.SelectExit(socket, args.interactableObject);
+
+                if (lockWrongSockets)
+                {
+                    // Force release the incorrect interactable
+                    socket.interactionManager.SelectExit(socket, args.interactableObject);
+                }
             }
         }
     }
