@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Dev.Ffuszthaler.DictionaryKVP;
+using Newtonsoft.Json;
 using Unity.XR.CoreUtils.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -11,6 +13,8 @@ public class SocketManager : MonoBehaviour
 {
     [SerializeField] private List<XRSocketInteractor> socketInteractors; // List of child sockets to validate
 
+    [SerializeField] private string configurationFilePath = "Assets/Configs/socket_config.json";
+
     [SerializeField] private SerializableDictionary<string, string> socketToInteractableMapping =
         new SerializableDictionary<string, string>();
 
@@ -18,6 +22,8 @@ public class SocketManager : MonoBehaviour
 
     private void OnEnable()
     {
+        LoadConfiguration();
+
         // Subscribe to events for all socket interactors
         foreach (var socket in socketInteractors)
         {
@@ -59,8 +65,6 @@ public class SocketManager : MonoBehaviour
             else
             {
                 Debug.LogWarning($"Incorrect item '{interactable?.name}' attempted to be socketed in '{socket.name}'.");
-                // // Force release the incorrect interactable
-                // socket.interactionManager.SelectExit(socket, args.interactableObject);
 
                 if (lockWrongSockets)
                 {
@@ -108,5 +112,38 @@ public class SocketManager : MonoBehaviour
     {
         // Logic for when all sockets are correctly filled
         Debug.Log("Puzzle solved! Triggering completion events...");
+    }
+
+    private void LoadConfiguration()
+    {
+        if (File.Exists(configurationFilePath))
+        {
+            string json = File.ReadAllText(configurationFilePath);
+            socketToInteractableMapping.Clear();
+            socketToInteractableMapping = JsonConvert.DeserializeObject<SerializableDictionary<string, string>>(json);
+            Debug.Log("Configuration loaded successfully.");
+
+            foreach (var kvp in socketToInteractableMapping)
+            {
+                Debug.Log($"Key: {kvp.Key}, Value: {kvp.Value}");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Configuration file not found. Using default settings.");
+        }
+    }
+
+    private void SaveConfiguration()
+    {
+        string directory = Path.GetDirectoryName(configurationFilePath);
+        if (!Directory.Exists(directory))
+        {
+            Directory.CreateDirectory(directory);
+        }
+
+        string json = JsonUtility.ToJson(socketToInteractableMapping, true);
+        File.WriteAllText(configurationFilePath, json);
+        Debug.Log("Configuration saved successfully.");
     }
 }
