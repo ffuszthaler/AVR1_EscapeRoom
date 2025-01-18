@@ -12,6 +12,8 @@ public class ButtonPatternManager : MonoBehaviour
 
     private void Start()
     {
+        // PuzzleMaster.Instance.onPuzzleComplete += OnSequenceComplete;
+        
         foreach (GameObject button in buttons)
         {
             var interactable = button.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
@@ -68,10 +70,12 @@ public class ButtonPatternManager : MonoBehaviour
         timer = 0.0f;
     }
 
-    private void OnSequenceComplete()
+    public void OnSequenceComplete()
     {
         // Handle what happens when the sequence is completed successfully
         Debug.Log("You can add custom logic here, such as unlocking a door or triggering an event.");
+        
+        PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
     }
 
     private void OnDestroy()

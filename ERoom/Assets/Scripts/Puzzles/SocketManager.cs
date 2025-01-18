@@ -108,10 +108,12 @@ public class SocketManager : MonoBehaviour
         return true; // All sockets have the correct interactables
     }
 
-    private void OnAllSocketsCorrect()
+    public void OnAllSocketsCorrect()
     {
         // Logic for when all sockets are correctly filled
         Debug.Log("Puzzle solved! Triggering completion events...");
+        
+        PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
     }
 
     private void LoadConfiguration()
