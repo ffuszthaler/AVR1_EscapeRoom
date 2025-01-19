@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PuzzleController : MonoBehaviour
 {
@@ -14,6 +16,12 @@ public class PuzzleController : MonoBehaviour
     // UnityEvent for when all puzzles are completed
     // public UnityEvent onAllPuzzlesComplete;
 
+    private void Start()
+    {
+        // Initialize puzzleCompletionStatus array to false (all puzzles are not completed at the start)
+        puzzleCompletionStatus = new bool[totalPuzzles];
+    }
+
     public void CompletePuzzle(string puzzleTag)
     {
         // Find the puzzle index by its tag
@@ -22,6 +30,9 @@ public class PuzzleController : MonoBehaviour
             if (puzzleTags[i] == puzzleTag)
             {
                 puzzleCompletionStatus[i] = true;
+                
+                // sound effect for individual puzzle completion
+                
                 Debug.Log(puzzleTag + " is complete");
                 break;
             }
@@ -45,6 +56,10 @@ public class PuzzleController : MonoBehaviour
 
     public void AllPuzzlesComplete()
     {
+        // sound effect for all puzzles finished
         Debug.Log("### GAME FINISHED ###");
+        
+        // change scene to winmenu
+        SceneManager.LoadScene("WinMenu");
     }
 }
