@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ButtonPatternManager : MonoBehaviour
 {
+    public UnityEvent completePuzzle;
+    
     [SerializeField] private GameObject[] buttons; // Assign your buttons in the Inspector
     [SerializeField] private float sequenceTimeout = 5.0f; // Time to complete the sequence
 
@@ -70,12 +73,13 @@ public class ButtonPatternManager : MonoBehaviour
         timer = 0.0f;
     }
 
-    public void OnSequenceComplete()
+    private void OnSequenceComplete()
     {
         // Handle what happens when the sequence is completed successfully
-        Debug.Log("You can add custom logic here, such as unlocking a door or triggering an event.");
+        // Debug.Log("You can add custom logic here, such as unlocking a door or triggering an event.");
         
-        PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
+        // PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
+        completePuzzle.Invoke();
     }
 
     private void OnDestroy()

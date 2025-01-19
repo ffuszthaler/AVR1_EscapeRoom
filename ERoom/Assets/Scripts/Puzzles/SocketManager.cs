@@ -5,12 +5,15 @@ using Dev.Ffuszthaler.DictionaryKVP;
 using Newtonsoft.Json;
 using Unity.XR.CoreUtils.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class SocketManager : MonoBehaviour
 {
+    public UnityEvent completePuzzle;
+    
     [SerializeField] private List<XRSocketInteractor> socketInteractors; // List of child sockets to validate
 
     [SerializeField] private string configurationFilePath = "Assets/Configs/socket_config.json";
@@ -108,12 +111,13 @@ public class SocketManager : MonoBehaviour
         return true; // All sockets have the correct interactables
     }
 
-    public void OnAllSocketsCorrect()
+    private void OnAllSocketsCorrect()
     {
         // Logic for when all sockets are correctly filled
-        Debug.Log("Puzzle solved! Triggering completion events...");
+        // Debug.Log("Puzzle solved! Triggering completion events...");
         
-        PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
+        // PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
+        completePuzzle.Invoke();
     }
 
     private void LoadConfiguration()
