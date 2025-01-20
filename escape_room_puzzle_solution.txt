@@ -1,0 +1,10 @@
+- puzzle 1: objects in order
+order: apple, banana, orange
+
+- puzzle 2: buttons in sequence
+sequence: N, E, S, W
+location: N W =  1 4
+	  S E =  3 2
+
+- puzzle 3: 3D puzzle
+ideally according to color. think rubik's cube
