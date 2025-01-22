@@ -1,11 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	217822611	Play_GlobalBGMusic			\Default Work Unit\Play_GlobalBGMusic	
 	1325891248	Play_ElectricHumming			\Default Work Unit\Play_ElectricHumming	
+	1326474932	Play_Failure			\Default Work Unit\Play_Failure	
+	2652178615	Play_ButtonPress			\Default Work Unit\Play_ButtonPress	
+	3754856490	Play_Interaction			\Default Work Unit\Play_Interaction	
+	3943614907	Play_Success			\Default Work Unit\Play_Success	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	91624080	horror-background-atmosphere-11-240870	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\horror-background-atmosphere-11-240870_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\horror-background-atmosphere-11-240870		13989984
-	308538163	horror-background-tension-254885	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\horror-background-tension-254885_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\horror-background-tension-254885		19408992
-	474699405	dark-and-creepy-piano-horror-music-loop-244576	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\dark-and-creepy-piano-horror-music-loop-244576_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\dark-and-creepy-piano-horror-music-loop-244576		18243168
+	20954228	InteractionPop	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\jug-pop-3-186888_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\InteractionPop		115296
+	40037054	switch-button-106349	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\switch-button-106349_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonPress\switch-button-106349		43872
+	567452290	error-5-199276	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\error-5-199276_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\error-5-199276		202848
 	621302694	ElectricHumming	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ElectricHumming		23134304
-	987809748	pastel-memories-of-a-hazy-morning-200486	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\pastel-memories-of-a-hazy-morning-200486_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GlobalBGMusic\pastel-memories-of-a-hazy-morning-200486		28408416
+	635439380	purchase-succesful-ingame-230550	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Android\SFX\purchase-succesful-ingame-230550_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\purchase-succesful-ingame-230550		179808
 

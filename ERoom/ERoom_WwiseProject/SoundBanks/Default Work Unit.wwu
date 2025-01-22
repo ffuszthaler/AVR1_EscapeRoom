@@ -5,8 +5,27 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{B517A7FB-519F-4974-BABA-EDBE78C35130}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_GlobalBGMusic" ID="{5EF51106-D9D2-412E-B6D1-7CF9E64F7E85}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Interaction" ID="{27B88682-8187-430E-961F-56FE1A8578C9}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Success" ID="{3A4C1242-BDB3-4353-BB11-78B607F2FE87}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Failure" ID="{EBBF6286-0F8E-44BB-B99C-70504F1E05C3}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ElectricHumming" ID="{6EC7DD87-22AE-4F90-98E1-585A72009CF4}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ButtonPress" ID="{6FA969C7-296A-4F9D-AEAF-2CD13CE71DB2}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="StartMenu" ID="{DE3349DF-67D0-4B90-9E80-895F5FA53B4D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_StartMenuBG" ID="{2258136D-F084-49F4-A286-59E447034B72}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_StartMenuBG" ID="{549C4266-3744-4B99-9631-438352015CCD}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="WinMenu" ID="{A6645760-06BF-44DA-9BE9-5B1956D5B4F3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_WinMenuBG" ID="{5CCA4DFA-D183-41C3-A94F-F7089F232AF8}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_WinMenuBG" ID="{DBBBE11A-ECA7-477C-A678-24F60030F0CE}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

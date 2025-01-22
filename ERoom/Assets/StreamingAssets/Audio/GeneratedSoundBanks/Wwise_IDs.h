@@ -13,14 +13,23 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BUTTONPRESS = 2652178615U;
         static const AkUniqueID PLAY_ELECTRICHUMMING = 1325891248U;
-        static const AkUniqueID PLAY_GLOBALBGMUSIC = 217822611U;
+        static const AkUniqueID PLAY_FAILURE = 1326474932U;
+        static const AkUniqueID PLAY_INTERACTION = 3754856490U;
+        static const AkUniqueID PLAY_STARTMENUBG = 2593458902U;
+        static const AkUniqueID PLAY_SUCCESS = 3943614907U;
+        static const AkUniqueID PLAY_WINMENUBG = 1060941176U;
+        static const AkUniqueID STOP_STARTMENUBG = 3811671372U;
+        static const AkUniqueID STOP_WINMENUBG = 4127599014U;
     } // namespace EVENTS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID STARTMENU = 3944636910U;
+        static const AkUniqueID WINMENU = 594779704U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -32,6 +32,7 @@ public class PuzzleController : MonoBehaviour
                 puzzleCompletionStatus[i] = true;
                 
                 // sound effect for individual puzzle completion
+                AkSoundEngine.PostEvent("Play_Success", gameObject);
                 
                 Debug.Log(puzzleTag + " is complete");
                 break;

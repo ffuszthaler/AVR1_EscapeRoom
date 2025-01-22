@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 8685c80a358a82488d3917df3f73299a
     GuidInternal: 
-    m_lastTime: -8584647655091191950
+    m_lastTime: -8584640489993281808
     List:
     - name: Main
       guid: fba717b59f517449babaedbe78c35130
@@ -99,6 +99,34 @@ MonoBehaviour:
         ObjectType: 7
         guid: fba717b59f517449babaedbe78c35130
       Path: SoundBanks\Default Work Unit\Main
+    - name: StartMenu
+      guid: df4933ded067904b9e80895f5fa53b4d
+      id: 3944636910
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8685c80a358a82488d3917df3f73299a
+      - ElementName: StartMenu
+        ObjectType: 7
+        guid: df4933ded067904b9e80895f5fa53b4d
+      Path: SoundBanks\Default Work Unit\StartMenu
+    - name: WinMenu
+      guid: 605764a6bf06da449be95b1956d5b4f3
+      id: 594779704
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8685c80a358a82488d3917df3f73299a
+      - ElementName: WinMenu
+        ObjectType: 7
+        guid: 605764a6bf06da449be95b1956d5b4f3
+      Path: SoundBanks\Default Work Unit\WinMenu
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -111,8 +139,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9ce17496c42964d85f1aaf71ba43ff4
     GuidInternal: 
-    m_lastTime: -8584647655091318411
+    m_lastTime: -8584640489993306979
     List:
+    - name: Play_ButtonPress
+      guid: c769a96f6a299d4faeaf2cd13ce71db2
+      id: 2652178615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Play_ButtonPress
+        ObjectType: 3
+        guid: c769a96f6a299d4faeaf2cd13ce71db2
+      Path: Events\Default Work Unit\Play_ButtonPress
+      maxAttenuation: 0
+      maxDuration: 0.456
+      minDuration: 0.456
     - name: Play_ElectricHumming
       guid: 87ddc76eae22904f98e1585a72009cf4
       id: 1325891248
@@ -127,9 +172,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 87ddc76eae22904f98e1585a72009cf4
       Path: Events\Default Work Unit\Play_ElectricHumming
-      maxAttenuation: 4
+      maxAttenuation: 6
       maxDuration: -1
       minDuration: -1
+    - name: Play_Failure
+      guid: 8662bfeb8e0fbb44b99c70504f1e05c3
+      id: 1326474932
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Play_Failure
+        ObjectType: 3
+        guid: 8662bfeb8e0fbb44b99c70504f1e05c3
+      Path: Events\Default Work Unit\Play_Failure
+      maxAttenuation: 0
+      maxDuration: 1.1493877
+      minDuration: 1.1493877
     - name: Play_GlobalBGMusic
       guid: 0611f55ed2d92e41b6d17cf9e64f7e85
       id: 217822611
@@ -145,8 +207,110 @@ MonoBehaviour:
         guid: 0611f55ed2d92e41b6d17cf9e64f7e85
       Path: Events\Default Work Unit\Play_GlobalBGMusic
       maxAttenuation: 0
-      maxDuration: 447.35544
-      minDuration: 447.35544
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Interaction
+      guid: 8286b82787810e43961f56fe1a8578c9
+      id: 3754856490
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Play_Interaction
+        ObjectType: 3
+        guid: 8286b82787810e43961f56fe1a8578c9
+      Path: Events\Default Work Unit\Play_Interaction
+      maxAttenuation: 0
+      maxDuration: 0.6
+      minDuration: 0.6
+    - name: Play_StartMenuBG
+      guid: 6d13582284f0f449a28659e447034b72
+      id: 2593458902
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Play_StartMenuBG
+        ObjectType: 3
+        guid: 6d13582284f0f449a28659e447034b72
+      Path: Events\Default Work Unit\Play_StartMenuBG
+      maxAttenuation: 0
+      maxDuration: 130.4555
+      minDuration: 130.4555
+    - name: Play_Success
+      guid: 42124c3ab3bd5343bb1178b607f2fe87
+      id: 3943614907
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Play_Success
+        ObjectType: 3
+        guid: 42124c3ab3bd5343bb1178b607f2fe87
+      Path: Events\Default Work Unit\Play_Success
+      maxAttenuation: 0
+      maxDuration: 1.0187755
+      minDuration: 1.0187755
+    - name: Play_WinMenuBG
+      guid: fa4dca5c83d1c341a94ff7089f232af8
+      id: 1060941176
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Play_WinMenuBG
+        ObjectType: 3
+        guid: fa4dca5c83d1c341a94ff7089f232af8
+      Path: Events\Default Work Unit\Play_WinMenuBG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_StartMenuBG
+      guid: 66429c544437994b9631438352015ccd
+      id: 3811671372
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Stop_StartMenuBG
+        ObjectType: 3
+        guid: 66429c544437994b9631438352015ccd
+      Path: Events\Default Work Unit\Stop_StartMenuBG
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_WinMenuBG
+      guid: 1ae1bbdba7ec7c47a67824f60030f0ce
+      id: 4127599014
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Stop_WinMenuBG
+        ObjectType: 3
+        guid: 1ae1bbdba7ec7c47a67824f60030f0ce
+      Path: Events\Default Work Unit\Stop_WinMenuBG
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -204,7 +368,7 @@ MonoBehaviour:
     m_lastTime: -8584647655091181743
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000090000000a00000024000000250000008600000087000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000001d0000001e00000024000000250000008600000087000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

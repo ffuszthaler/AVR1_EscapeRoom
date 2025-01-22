@@ -9,6 +9,24 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="594779704" Type="User" Language="SFX" Hash="{C9E26CBF-E2B6-0F93-317C-DA51100CE030}">
+			<ShortName>WinMenu</ShortName>
+			<Path>WinMenu.bnk</Path>
+			<Media>
+				<File Id="987809748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pastel-memories-of-a-hazy-morning-200486.wav</ShortName>
+					<CachePath>SFX/pastel-memories-of-a-hazy-morning-200486_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1060941176" Name="Play_WinMenuBG" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="987809748"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4127599014" Name="Stop_WinMenuBG" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E1EECF3B-B8A4-06CB-B70E-D12ED2BD17C4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -32,47 +50,77 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A54966DD-5A51-F4B3-083D-534C0F334DC9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7AE25D6B-D5D6-90D9-ECAD-24B253F5C702}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="91624080" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>horror-background-atmosphere-11-240870.wav</ShortName>
-					<CachePath>SFX/horror-background-atmosphere-11-240870_818F3B66.wem</CachePath>
+				<File Id="20954228" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>jug-pop-3-186888.wav</ShortName>
+					<CachePath>SFX/jug-pop-3-186888_818F3B66.wem</CachePath>
 				</File>
-				<File Id="308538163" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>horror-background-tension-254885.wav</ShortName>
-					<CachePath>SFX/horror-background-tension-254885_818F3B66.wem</CachePath>
+				<File Id="40037054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>switch-button-106349.wav</ShortName>
+					<CachePath>SFX/switch-button-106349_818F3B66.wem</CachePath>
 				</File>
-				<File Id="474699405" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>dark-and-creepy-piano-horror-music-loop-244576.wav</ShortName>
-					<CachePath>SFX/dark-and-creepy-piano-horror-music-loop-244576_818F3B66.wem</CachePath>
+				<File Id="567452290" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>error-5-199276.wav</ShortName>
+					<CachePath>SFX/error-5-199276_818F3B66.wem</CachePath>
 				</File>
 				<File Id="621302694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009.wav</ShortName>
 					<CachePath>SFX/367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="987809748" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>pastel-memories-of-a-hazy-morning-200486.wav</ShortName>
-					<CachePath>SFX/pastel-memories-of-a-hazy-morning-200486_818F3B66.wem</CachePath>
+				<File Id="635439380" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>purchase-succesful-ingame-230550.wav</ShortName>
+					<CachePath>SFX/purchase-succesful-ingame-230550_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1325891248" Name="Play_ElectricHumming" MaxAttenuation="4" DurationType="Infinite">
+				<Event Id="2652178615" Name="Play_ButtonPress" DurationType="OneShot" DurationMin="0.456" DurationMax="0.456">
+					<MediaRefs>
+						<MediaRef Id="40037054"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1325891248" Name="Play_ElectricHumming" MaxAttenuation="6" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="621302694"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="217822611" Name="Play_GlobalBGMusic" DurationType="OneShot" DurationMin="447.35544" DurationMax="447.35544">
+				<Event Id="1326474932" Name="Play_Failure" DurationType="OneShot" DurationMin="1.1493877" DurationMax="1.1493877">
 					<MediaRefs>
-						<MediaRef Id="91624080"/>
-						<MediaRef Id="308538163"/>
-						<MediaRef Id="474699405"/>
-						<MediaRef Id="987809748"/>
+						<MediaRef Id="567452290"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3754856490" Name="Play_Interaction" DurationType="OneShot" DurationMin="0.6" DurationMax="0.6">
+					<MediaRefs>
+						<MediaRef Id="20954228"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3943614907" Name="Play_Success" DurationType="OneShot" DurationMin="1.0187755" DurationMax="1.0187755">
+					<MediaRefs>
+						<MediaRef Id="635439380"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3944636910" Type="User" Language="SFX" Hash="{F6CEC0E4-0BB6-BDEA-004E-5D465B70E7E0}">
+			<ShortName>StartMenu</ShortName>
+			<Path>StartMenu.bnk</Path>
+			<Media>
+				<File Id="340003423" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>scary-clown-horror-172681.wav</ShortName>
+					<CachePath>SFX/scary-clown-horror-172681_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2593458902" Name="Play_StartMenuBG" DurationType="OneShot" DurationMin="130.4555" DurationMax="130.4555">
+					<MediaRefs>
+						<MediaRef Id="340003423"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3811671372" Name="Stop_StartMenuBG" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{80492DF7-450F-037E-E9A9-DEC67127F790}</FileHash>
+	<FileHash>{156B305F-20C8-A5C7-F14A-8E5F6842F692}</FileHash>
 </SoundBanksInfo>

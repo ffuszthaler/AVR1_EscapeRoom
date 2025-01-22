@@ -46,10 +46,12 @@ public class ButtonPatternManager : MonoBehaviour
     private void OnButtonPressed(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs args)
     {
         GameObject pressedButton = args.interactableObject.transform.gameObject;
+        AkSoundEngine.PostEvent("Play_ButtonPress", gameObject);
 
         if (pressedButton == buttons[currentSequenceIndex])
         {
             Debug.Log($"Button {currentSequenceIndex + 1} pressed correctly.");
+            
             currentSequenceIndex++;
             timer = 0.0f; // Reset timer for sequence
 

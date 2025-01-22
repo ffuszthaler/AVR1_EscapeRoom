@@ -48,6 +48,7 @@ public class SocketManager : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         XRSocketInteractor socket = args.interactorObject as XRSocketInteractor;
+        AkSoundEngine.PostEvent("Play_Interaction", gameObject);
 
         if (socket != null && socketInteractors.Contains(socket))
         {

@@ -6,6 +6,13 @@
 				<Folder Name="SFX" ID="{C2455ADD-86F5-490B-882B-92902E0F894F}" ShortID="646601072">
 					<ChildrenList>
 						<Sound Name="240802__ryanconway__openchest" ID="{A4B246E1-A2D8-4DCC-8A90-3CB5F0156932}" ShortID="310614258">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -28,6 +35,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="07032264" ID="{31DD73BB-F120-4AB0-A5B3-0B2EB5FF8D1F}" ShortID="287841456">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -50,6 +64,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="542028__rob_marion__gasp_item-interact_3" ID="{E6CE3D3A-CC82-4544-BAA1-62310FA13792}" ShortID="25292794">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -72,6 +93,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="bbc_electronic_07014112" ID="{4624F46A-6361-469C-960E-3DF22315FD21}" ShortID="850312304">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -94,6 +122,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="338106__splicesound__footsteps-barefoot-on-wet-tile" ID="{BE27B79C-55EF-47F6-951E-77655D2A7B77}" ShortID="540966093">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -116,6 +151,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="257273__natty23__coin-faint" ID="{40E9A668-4286-4B24-B051-9C2F097F728A}" ShortID="643923039">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -143,7 +185,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-35</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -175,6 +217,11 @@
 				</Folder>
 				<RandomSequenceContainer Name="GlobalBGMusic" ID="{EE30E082-0677-4527-8A00-389368777513}" ShortID="701268979">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -194,13 +241,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="suspense-nothin-to-it-179388" ID="{DE934B6E-DD53-4614-A694-0AAF6FED72A6}" ShortID="375649743">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -223,13 +263,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="suspense-nice-to-know-you-179387" ID="{EFB2F885-703F-4C82-9820-6B26E173F9BA}" ShortID="454511601">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -252,13 +285,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="suspense-two-minds-179389" ID="{84719225-189C-4A07-83B6-2DA086485355}" ShortID="947820948">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -346,65 +372,7 @@
 								<ActiveSource Name="horror-background-tension-254885" ID="{891966CB-9D2F-4516-A84C-CD721FE8A221}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="pastel-memories-of-a-hazy-morning-200486" ID="{9B1FACAF-9808-4EC8-BE34-5FAAC02FE8BC}" ShortID="287178264">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="pastel-memories-of-a-hazy-morning-200486" ID="{B5BA4194-6BB3-4CDD-96D2-21BF94D8B384}">
-									<Language>SFX</Language>
-									<AudioFile>pastel-memories-of-a-hazy-morning-200486.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="987809748"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="pastel-memories-of-a-hazy-morning-200486" ID="{B5BA4194-6BB3-4CDD-96D2-21BF94D8B384}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="scary-clown-horror-172681" ID="{8665DBDD-82A8-4587-A73E-AB5070649560}" ShortID="944339224">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="scary-clown-horror-172681" ID="{F0CE1C95-B097-4BFC-9420-32E88855A6BE}">
-									<Language>SFX</Language>
-									<AudioFile>scary-clown-horror-172681.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="340003423"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="scary-clown-horror-172681" ID="{F0CE1C95-B097-4BFC-9420-32E88855A6BE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="tense-horror-background-174809" ID="{25EC4BA4-19F4-4DB5-94EA-86795853E72B}" ShortID="607852918">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
@@ -424,6 +392,237 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="tense-horror-background-174809" ID="{3BD9B058-D7EF-44D8-82B1-8B180DF2683B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Folder Name="WinMenuBG" ID="{481B7DA7-1160-4D17-A7B8-9217A9BDA4E6}" ShortID="568264400">
+					<ChildrenList>
+						<Sound Name="pastel-memories-of-a-hazy-morning-200486" ID="{9B1FACAF-9808-4EC8-BE34-5FAAC02FE8BC}" ShortID="287178264">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-45</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pastel-memories-of-a-hazy-morning-200486" ID="{B5BA4194-6BB3-4CDD-96D2-21BF94D8B384}">
+									<Language>SFX</Language>
+									<AudioFile>pastel-memories-of-a-hazy-morning-200486.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="987809748"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pastel-memories-of-a-hazy-morning-200486" ID="{B5BA4194-6BB3-4CDD-96D2-21BF94D8B384}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="StartMenuBG" ID="{3F75C220-6F13-490B-AFBE-187905AC8E42}" ShortID="116550014">
+					<ChildrenList>
+						<Sound Name="scary-clown-horror-172681" ID="{8665DBDD-82A8-4587-A73E-AB5070649560}" ShortID="944339224">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-45</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="scary-clown-horror-172681" ID="{F0CE1C95-B097-4BFC-9420-32E88855A6BE}">
+									<Language>SFX</Language>
+									<AudioFile>scary-clown-horror-172681.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="340003423"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="scary-clown-horror-172681" ID="{F0CE1C95-B097-4BFC-9420-32E88855A6BE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<RandomSequenceContainer Name="Interaction" ID="{4C6CA42C-E604-4569-9D85-06210D271F09}" ShortID="583969197">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-31</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="InteractionPop" ID="{E4E3024B-38DF-4921-8CFD-24B434C0243F}" ShortID="501657646">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="jug-pop-3-186888" ID="{04128803-A66F-4E08-8AAE-BF685608E9C6}">
+									<Language>SFX</Language>
+									<AudioFile>jug-pop-3-186888.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="20954228"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="jug-pop-3-186888" ID="{04128803-A66F-4E08-8AAE-BF685608E9C6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Success" ID="{90505D0E-062B-4845-92F3-1F02500A3CA6}" ShortID="540199041">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-29</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="purchase-succesful-ingame-230550" ID="{41A980BB-0BCD-4009-834F-F2EE15B0C000}" ShortID="752863718">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="purchase-succesful-ingame-230550" ID="{CC3D64CC-5A14-4502-B314-9F0BEE80DE78}">
+									<Language>SFX</Language>
+									<AudioFile>purchase-succesful-ingame-230550.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="635439380"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="purchase-succesful-ingame-230550" ID="{CC3D64CC-5A14-4502-B314-9F0BEE80DE78}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Failure" ID="{23F71F73-A2C2-455B-88A5-DE41034D64DB}" ShortID="818423132">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-27</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="error-5-199276" ID="{E45F0B96-0543-4D33-8AA3-13345FEE4E1B}" ShortID="573068564">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="error-5-199276" ID="{DFEED0E7-BBC0-42AC-B786-0A37EF385432}">
+									<Language>SFX</Language>
+									<AudioFile>error-5-199276.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="567452290"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="error-5-199276" ID="{DFEED0E7-BBC0-42AC-B786-0A37EF385432}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="ButtonPress" ID="{B942597F-7024-418A-A0DC-5980B1B614E6}" ShortID="134034697">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Renderer" ID="{3D4DC645-8035-4D87-934F-F19F17BAEFBD}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="switch-button-106349" ID="{A2B2DDD7-328A-4098-B336-BF9633E34BC5}" ShortID="486336525">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{730F7509-C33E-487B-9F8E-1261120FC7A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B27A87F4-819F-4907-B1E2-17841DD72C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="switch-button-106349" ID="{282423CB-9873-49F2-80F8-04ACF24BD38C}">
+									<Language>SFX</Language>
+									<AudioFile>switch-button-106349.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="40037054"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="switch-button-106349" ID="{282423CB-9873-49F2-80F8-04ACF24BD38C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -25,6 +25,100 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_StartMenuBG" ID="{2258136D-F084-49F4-A286-59E447034B72}">
+					<ChildrenList>
+						<Action Name="" ID="{012D838B-935E-4E67-98FB-CC6097C0FEC9}" ShortID="822701914">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scary-clown-horror-172681" ID="{8665DBDD-82A8-4587-A73E-AB5070649560}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WinMenuBG" ID="{5CCA4DFA-D183-41C3-A94F-F7089F232AF8}">
+					<ChildrenList>
+						<Action Name="" ID="{42B693BD-8FF3-408E-BEB9-4BE5DFB26E3E}" ShortID="626388045">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pastel-memories-of-a-hazy-morning-200486" ID="{9B1FACAF-9808-4EC8-BE34-5FAAC02FE8BC}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Interaction" ID="{27B88682-8187-430E-961F-56FE1A8578C9}">
+					<ChildrenList>
+						<Action Name="" ID="{FA27AE0E-B0AE-4EB3-85ED-1038D1A95F49}" ShortID="393025250">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interaction" ID="{4C6CA42C-E604-4569-9D85-06210D271F09}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Success" ID="{3A4C1242-BDB3-4353-BB11-78B607F2FE87}">
+					<ChildrenList>
+						<Action Name="" ID="{41B06058-DD3A-4221-92E6-047782F0CAD3}" ShortID="118707959">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success" ID="{90505D0E-062B-4845-92F3-1F02500A3CA6}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Failure" ID="{EBBF6286-0F8E-44BB-B99C-70504F1E05C3}">
+					<ChildrenList>
+						<Action Name="" ID="{717E5C41-DC5B-4171-B78E-241DE2B8BDA1}" ShortID="152932643">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Failure" ID="{23F71F73-A2C2-455B-88A5-DE41034D64DB}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ButtonPress" ID="{6FA969C7-296A-4F9D-AEAF-2CD13CE71DB2}">
+					<ChildrenList>
+						<Action Name="" ID="{C1C69295-E33D-4BAC-8D36-CEDA556983F5}" ShortID="276405280">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonPress" ID="{B942597F-7024-418A-A0DC-5980B1B614E6}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_StartMenuBG" ID="{549C4266-3744-4B99-9631-438352015CCD}">
+					<ChildrenList>
+						<Action Name="" ID="{A916139F-1960-40DF-92E5-DD5087A2E5A5}" ShortID="1069711296">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scary-clown-horror-172681" ID="{8665DBDD-82A8-4587-A73E-AB5070649560}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_WinMenuBG" ID="{DBBBE11A-ECA7-477C-A678-24F60030F0CE}">
+					<ChildrenList>
+						<Action Name="" ID="{6491DD58-6D66-4D81-9C4D-1CA0FA1BE47C}" ShortID="1065632183">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pastel-memories-of-a-hazy-morning-200486" ID="{9B1FACAF-9808-4EC8-BE34-5FAAC02FE8BC}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
