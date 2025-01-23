@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 8685c80a358a82488d3917df3f73299a
     GuidInternal: 
-    m_lastTime: -8584640489993281808
+    m_lastTime: -8584639580412510962
     List:
     - name: Main
       guid: fba717b59f517449babaedbe78c35130
@@ -139,7 +139,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9ce17496c42964d85f1aaf71ba43ff4
     GuidInternal: 
-    m_lastTime: -8584640489993306979
+    m_lastTime: -8584639580412485136
     List:
     - name: Play_ButtonPress
       guid: c769a96f6a299d4faeaf2cd13ce71db2
@@ -277,6 +277,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Interaction
+      guid: d8c5557ef876be448216cd4d9aabba8c
+      id: 1877293712
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9ce17496c42964d85f1aaf71ba43ff4
+      - ElementName: Stop_Interaction
+        ObjectType: 3
+        guid: d8c5557ef876be448216cd4d9aabba8c
+      Path: Events\Default Work Unit\Stop_Interaction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_StartMenuBG
       guid: 66429c544437994b9631438352015ccd
       id: 3811671372

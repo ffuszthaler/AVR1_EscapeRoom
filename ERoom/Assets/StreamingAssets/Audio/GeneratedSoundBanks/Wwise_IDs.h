@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID PLAY_STARTMENUBG = 2593458902U;
         static const AkUniqueID PLAY_SUCCESS = 3943614907U;
         static const AkUniqueID PLAY_WINMENUBG = 1060941176U;
+        static const AkUniqueID STOP_INTERACTION = 1877293712U;
         static const AkUniqueID STOP_STARTMENUBG = 3811671372U;
         static const AkUniqueID STOP_WINMENUBG = 4127599014U;
     } // namespace EVENTS

@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1325891248	Play_ElectricHumming			\Default Work Unit\Play_ElectricHumming	
 	1326474932	Play_Failure			\Default Work Unit\Play_Failure	
+	1877293712	Stop_Interaction			\Default Work Unit\Stop_Interaction	
 	2652178615	Play_ButtonPress			\Default Work Unit\Play_ButtonPress	
 	3754856490	Play_Interaction			\Default Work Unit\Play_Interaction	
 	3943614907	Play_Success			\Default Work Unit\Play_Success	

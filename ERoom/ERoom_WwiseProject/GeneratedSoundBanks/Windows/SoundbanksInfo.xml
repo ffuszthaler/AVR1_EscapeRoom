@@ -50,7 +50,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7AE25D6B-D5D6-90D9-ECAD-24B253F5C702}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{64E380E1-EE1E-711C-07C6-B828AA444639}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -101,6 +101,7 @@
 						<MediaRef Id="635439380"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1877293712" Name="Stop_Interaction" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="3944636910" Type="User" Language="SFX" Hash="{F6CEC0E4-0BB6-BDEA-004E-5D465B70E7E0}">
@@ -122,5 +123,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{156B305F-20C8-A5C7-F14A-8E5F6842F692}</FileHash>
+	<FileHash>{440B7956-B0DE-0208-E5BE-A967CF97D4F9}</FileHash>
 </SoundBanksInfo>

@@ -8,6 +8,7 @@
 						<ObjectRef Name="Play_Interaction" ID="{27B88682-8187-430E-961F-56FE1A8578C9}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Success" ID="{3A4C1242-BDB3-4353-BB11-78B607F2FE87}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Failure" ID="{EBBF6286-0F8E-44BB-B99C-70504F1E05C3}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Interaction" ID="{7E55C5D8-76F8-44BE-8216-CD4D9AABBA8C}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ElectricHumming" ID="{6EC7DD87-22AE-4F90-98E1-585A72009CF4}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ButtonPress" ID="{6FA969C7-296A-4F9D-AEAF-2CD13CE71DB2}" WorkUnitID="{4917CEC9-426C-4D96-85F1-AAF71BA43FF4}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

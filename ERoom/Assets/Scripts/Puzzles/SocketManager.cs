@@ -23,6 +23,8 @@ public class SocketManager : MonoBehaviour
 
     [SerializeField] private bool lockWrongSockets = true;
 
+    bool isTriggered = false;
+
     private void OnEnable()
     {
         LoadConfiguration();
@@ -57,7 +59,11 @@ public class SocketManager : MonoBehaviour
                 socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
             {
                 Debug.Log($"Correct item '{interactable.name}' socketed in '{socket.name}'.");
-                AkSoundEngine.PostEvent("Play_Interaction", gameObject);
+                if (isTriggered == false)
+                {
+                    AkSoundEngine.PostEvent("Play_Interaction", gameObject);
+                    isTriggered = true;
+                }
 
                 // Check if all interactables are correctly socketed
                 if (AreAllSocketsCorrect())
@@ -69,7 +75,12 @@ public class SocketManager : MonoBehaviour
             else
             {
                 Debug.LogWarning($"Incorrect item '{interactable?.name}' attempted to be socketed in '{socket.name}'.");
-                AkSoundEngine.PostEvent("Play_Interaction", gameObject);
+
+                if (isTriggered == false)
+                {
+                    AkSoundEngine.PostEvent("Play_Interaction", gameObject);
+                    isTriggered = true;
+                }
 
                 if (lockWrongSockets)
                 {
@@ -87,6 +98,7 @@ public class SocketManager : MonoBehaviour
         if (socket != null && socketInteractors.Contains(socket))
         {
             Debug.Log($"Item removed from '{socket.name}'.");
+            isTriggered = false;
         }
     }
 
@@ -125,16 +137,16 @@ public class SocketManager : MonoBehaviour
         TextAsset file = Resources.Load<TextAsset>(filePath);
         return file.text;
     }
-    
+
     private bool FileExistsInResources(string path)
     {
         string filePath = path.Replace(".json", "");
         TextAsset file = Resources.Load<TextAsset>(filePath);
-    
+
         // Return true if resource is found, otherwise false
         return file != null;
     }
-    
+
     private void LoadConfiguration()
     {
         if (FileExistsInResources(configurationFilePath))

@@ -119,6 +119,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Interaction" ID="{7E55C5D8-76F8-44BE-8216-CD4D9AABBA8C}">
+					<ChildrenList>
+						<Action Name="" ID="{BF04F205-4016-49B8-B339-6CD8BAA0EF1C}" ShortID="19310263">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interaction" ID="{4C6CA42C-E604-4569-9D85-06210D271F09}" WorkUnitID="{BB61C9B2-DA66-4F0A-83BE-EBA834C878BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

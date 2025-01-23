@@ -465,6 +465,11 @@
 				</Folder>
 				<RandomSequenceContainer Name="Interaction" ID="{4C6CA42C-E604-4569-9D85-06210D271F09}" ShortID="583969197">
 					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-31</Value>
