@@ -77,10 +77,6 @@ public class ButtonPatternManager : MonoBehaviour
 
     private void OnSequenceComplete()
     {
-        // Handle what happens when the sequence is completed successfully
-        // Debug.Log("You can add custom logic here, such as unlocking a door or triggering an event.");
-        
-        // PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
         completePuzzle.Invoke();
     }
 

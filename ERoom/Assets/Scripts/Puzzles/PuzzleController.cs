@@ -13,9 +13,6 @@ public class PuzzleController : MonoBehaviour
     
     [SerializeField] private string[] puzzleTags = { "Puzzle1", "Puzzle2", "Puzzle3" };
     
-    // UnityEvent for when all puzzles are completed
-    // public UnityEvent onAllPuzzlesComplete;
-
     private void Start()
     {
         // Initialize puzzleCompletionStatus array to false (all puzzles are not completed at the start)

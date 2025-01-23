@@ -48,7 +48,6 @@ public class SocketManager : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         XRSocketInteractor socket = args.interactorObject as XRSocketInteractor;
-        AkSoundEngine.PostEvent("Play_Interaction", gameObject);
 
         if (socket != null && socketInteractors.Contains(socket))
         {
@@ -58,6 +57,7 @@ public class SocketManager : MonoBehaviour
                 socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
             {
                 Debug.Log($"Correct item '{interactable.name}' socketed in '{socket.name}'.");
+                AkSoundEngine.PostEvent("Play_Interaction", gameObject);
 
                 // Check if all interactables are correctly socketed
                 if (AreAllSocketsCorrect())
@@ -69,6 +69,7 @@ public class SocketManager : MonoBehaviour
             else
             {
                 Debug.LogWarning($"Incorrect item '{interactable?.name}' attempted to be socketed in '{socket.name}'.");
+                AkSoundEngine.PostEvent("Play_Interaction", gameObject);
 
                 if (lockWrongSockets)
                 {
@@ -115,9 +116,6 @@ public class SocketManager : MonoBehaviour
     private void OnAllSocketsCorrect()
     {
         // Logic for when all sockets are correctly filled
-        // Debug.Log("Puzzle solved! Triggering completion events...");
-
-        // PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
         completePuzzle.Invoke();
     }
 
