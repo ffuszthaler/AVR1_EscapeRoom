@@ -13,7 +13,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class SocketManager : MonoBehaviour
 {
     public UnityEvent completePuzzle;
-    
+
     [SerializeField] private List<XRSocketInteractor> socketInteractors; // List of child sockets to validate
 
     [SerializeField] private string configurationFilePath = "Assets/Configs/socket_config.json";
@@ -116,19 +116,36 @@ public class SocketManager : MonoBehaviour
     {
         // Logic for when all sockets are correctly filled
         // Debug.Log("Puzzle solved! Triggering completion events...");
-        
+
         // PuzzleMaster.Instance.MarkPuzzleComplete(gameObject.tag);
         completePuzzle.Invoke();
     }
 
+    private string LoadJsonFromResources(string path)
+    {
+        string filePath = path.Replace(".json", "");
+        TextAsset file = Resources.Load<TextAsset>(filePath);
+        return file.text;
+    }
+    
+    private bool FileExistsInResources(string path)
+    {
+        string filePath = path.Replace(".json", "");
+        TextAsset file = Resources.Load<TextAsset>(filePath);
+    
+        // Return true if resource is found, otherwise false
+        return file != null;
+    }
+    
     private void LoadConfiguration()
     {
-        if (File.Exists(configurationFilePath))
+        if (FileExistsInResources(configurationFilePath))
         {
-            string json = File.ReadAllText(configurationFilePath);
+            string json = LoadJsonFromResources(configurationFilePath);
             socketToInteractableMapping.Clear();
             socketToInteractableMapping = JsonConvert.DeserializeObject<SerializableDictionary<string, string>>(json);
             Debug.Log("Configuration loaded successfully.");
+            Debug.LogWarning("Path: " + configurationFilePath);
 
             foreach (var kvp in socketToInteractableMapping)
             {
@@ -138,6 +155,7 @@ public class SocketManager : MonoBehaviour
         else
         {
             Debug.LogWarning("Configuration file not found. Using default settings.");
+            Debug.LogWarning("Path: " + configurationFilePath);
         }
     }
 
