@@ -65,6 +65,7 @@ public class ButtonPatternManager : MonoBehaviour
         else
         {
             Debug.Log("Wrong button pressed. Resetting sequence.");
+            AkSoundEngine.PostEvent("Play_Failure", gameObject);
             ResetSequence();
         }
     }

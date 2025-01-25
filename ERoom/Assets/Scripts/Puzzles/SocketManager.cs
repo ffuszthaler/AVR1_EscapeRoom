@@ -23,7 +23,7 @@ public class SocketManager : MonoBehaviour
 
     [SerializeField] private bool lockWrongSockets = true;
 
-    bool isTriggered = false;
+    [SerializeField] private bool isTriggered = false;
 
     private void OnEnable()
     {
@@ -59,6 +59,8 @@ public class SocketManager : MonoBehaviour
                 socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
             {
                 Debug.Log($"Correct item '{interactable.name}' socketed in '{socket.name}'.");
+
+                // correct item added to socket sound
                 if (isTriggered == false)
                 {
                     AkSoundEngine.PostEvent("Play_Interaction", gameObject);
@@ -71,11 +73,14 @@ public class SocketManager : MonoBehaviour
                     Debug.Log("All interactables are correctly socketed!");
                     OnAllSocketsCorrect();
                 }
+
+                isTriggered = false;
             }
             else
             {
                 Debug.LogWarning($"Incorrect item '{interactable?.name}' attempted to be socketed in '{socket.name}'.");
 
+                // wrong item added to socket sound
                 if (isTriggered == false)
                 {
                     AkSoundEngine.PostEvent("Play_Interaction", gameObject);
@@ -87,6 +92,8 @@ public class SocketManager : MonoBehaviour
                     // Force release the incorrect interactable
                     socket.interactionManager.SelectExit(socket, args.interactableObject);
                 }
+
+                isTriggered = false;
             }
         }
     }
@@ -98,6 +105,15 @@ public class SocketManager : MonoBehaviour
         if (socket != null && socketInteractors.Contains(socket))
         {
             Debug.Log($"Item removed from '{socket.name}'.");
+            // isTriggered = false;
+
+            // item removed from socket sound
+            if (isTriggered == false)
+            {
+                AkSoundEngine.PostEvent("Play_Interaction", gameObject);
+                isTriggered = true;
+            }
+
             isTriggered = false;
         }
     }

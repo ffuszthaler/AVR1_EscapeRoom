@@ -13,6 +13,8 @@ public class PuzzleController : MonoBehaviour
     
     [SerializeField] private string[] puzzleTags = { "Puzzle1", "Puzzle2", "Puzzle3" };
     
+    [SerializeField] private SceneController sceneController;
+    
     private void Start()
     {
         // Initialize puzzleCompletionStatus array to false (all puzzles are not completed at the start)
@@ -58,6 +60,7 @@ public class PuzzleController : MonoBehaviour
         Debug.Log("### GAME FINISHED ###");
         
         // change scene to winmenu
-        SceneManager.LoadScene("WinMenu");
+        // SceneManager.LoadScene("WinMenu");
+        sceneController.LoadScene("WinMenu");
     }
 }

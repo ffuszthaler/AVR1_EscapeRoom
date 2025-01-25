@@ -604,6 +604,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2146294419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &603035984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 313865911132825486, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneController
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676722401746800989, guid: 06501b1fddfdb27408330e464783f9c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06501b1fddfdb27408330e464783f9c0, type: 3}
 --- !u!1001 &748518561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -904,6 +972,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d2a897b44aaf324ab25a0ffea4f5eff, type: 3}
+--- !u!114 &973534599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8245536703843553126, guid: 06501b1fddfdb27408330e464783f9c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 603035984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a488a54010b724ca61917af241751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034229862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2106,7 @@ GameObject:
   - component: {fileID: 2091493275}
   - component: {fileID: 2091493280}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: StartMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2148,6 +2228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db66c61efd98c074a9491dd9fdf6192a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneController: {fileID: 973534599}
 --- !u!1001 &2146294419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2230,6 +2311,7 @@ SceneRoots:
   - {fileID: 1405825871}
   - {fileID: 893543437}
   - {fileID: 2091493279}
+  - {fileID: 603035984}
   - {fileID: 403909423}
   - {fileID: 309782136}
   - {fileID: 540523275}
