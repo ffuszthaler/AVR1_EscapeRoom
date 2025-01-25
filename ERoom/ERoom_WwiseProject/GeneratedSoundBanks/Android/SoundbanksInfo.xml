@@ -50,7 +50,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{64E380E1-EE1E-711C-07C6-B828AA444639}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8BE48BC8-8111-31C0-B7D7-83CC1079D3AA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -76,7 +76,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2652178615" Name="Play_ButtonPress" DurationType="OneShot" DurationMin="0.456" DurationMax="0.456">
+				<Event Id="2652178615" Name="Play_ButtonPress" DurationType="OneShot" DurationMin="0.3770791" DurationMax="0.6765518">
 					<MediaRefs>
 						<MediaRef Id="40037054"/>
 					</MediaRefs>
@@ -86,12 +86,12 @@
 						<MediaRef Id="621302694"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1326474932" Name="Play_Failure" DurationType="OneShot" DurationMin="1.1493877" DurationMax="1.1493877">
+				<Event Id="1326474932" Name="Play_Failure" DurationType="OneShot" DurationMin="0.91016424" DurationMax="1.5619687">
 					<MediaRefs>
 						<MediaRef Id="567452290"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3754856490" Name="Play_Interaction" DurationType="OneShot" DurationMin="0.6" DurationMax="0.6">
+				<Event Id="3754856490" Name="Play_Interaction" DurationType="OneShot" DurationMin="0.4964434" DurationMax="0.7687223">
 					<MediaRefs>
 						<MediaRef Id="20954228"/>
 					</MediaRefs>
@@ -123,5 +123,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B8A8C2AD-CF2F-CE81-ACF1-8295DBE1B784}</FileHash>
+	<FileHash>{EE7B9628-48D2-1215-BB6A-AA9FB6CB201E}</FileHash>
 </SoundBanksInfo>

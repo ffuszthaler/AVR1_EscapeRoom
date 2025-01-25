@@ -139,7 +139,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9ce17496c42964d85f1aaf71ba43ff4
     GuidInternal: 
-    m_lastTime: -8584639580412485136
+    m_lastTime: -8584637882720534892
     List:
     - name: Play_ButtonPress
       guid: c769a96f6a299d4faeaf2cd13ce71db2
@@ -156,8 +156,8 @@ MonoBehaviour:
         guid: c769a96f6a299d4faeaf2cd13ce71db2
       Path: Events\Default Work Unit\Play_ButtonPress
       maxAttenuation: 0
-      maxDuration: 0.456
-      minDuration: 0.456
+      maxDuration: 0.6765518
+      minDuration: 0.3770791
     - name: Play_ElectricHumming
       guid: 87ddc76eae22904f98e1585a72009cf4
       id: 1325891248
@@ -190,8 +190,8 @@ MonoBehaviour:
         guid: 8662bfeb8e0fbb44b99c70504f1e05c3
       Path: Events\Default Work Unit\Play_Failure
       maxAttenuation: 0
-      maxDuration: 1.1493877
-      minDuration: 1.1493877
+      maxDuration: 1.5619687
+      minDuration: 0.91016424
     - name: Play_GlobalBGMusic
       guid: 0611f55ed2d92e41b6d17cf9e64f7e85
       id: 217822611
@@ -224,8 +224,8 @@ MonoBehaviour:
         guid: 8286b82787810e43961f56fe1a8578c9
       Path: Events\Default Work Unit\Play_Interaction
       maxAttenuation: 0
-      maxDuration: 0.6
-      minDuration: 0.6
+      maxDuration: 0.7687223
+      minDuration: 0.4964434
     - name: Play_StartMenuBG
       guid: 6d13582284f0f449a28659e447034b72
       id: 2593458902
