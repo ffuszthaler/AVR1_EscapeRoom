@@ -5,14 +5,14 @@ using UnityEngine;
 public class HeadCollisionDetector : MonoBehaviour
 {
     [SerializeField, Range(0, 0.5f)]
-    private float _detectionDelay = 0.05f;
+    private float detectionDelay = 0.05f;
     [SerializeField]
-    private float _detectionDistance = 0.2f;
+    private float detectionDistances = 0.2f;
     [SerializeField]
-    private LayerMask _detectionLayers;
+    private LayerMask detectionLayers;
     public List<RaycastHit> DetectedColliderHits { get; private set; }
 
-    private float _currentTime = 0;
+    private float currentTime = 0;
 
     [field: SerializeField]
     public bool InsideCollider { get; private set; }
@@ -40,21 +40,21 @@ public class HeadCollisionDetector : MonoBehaviour
     private void Start()
     {
         DetectedColliderHits = PreformDetection(transform.position,
-           _detectionDistance, _detectionLayers);
+           detectionDistances, detectionLayers);
     }
     void Update()
     {
-        _currentTime += Time.deltaTime;
-        if (_currentTime > _detectionDelay)
+        currentTime += Time.deltaTime;
+        if (currentTime > detectionDelay)
         {
-            _currentTime = 0;
+            currentTime = 0;
             InsideCollider = false;
             DetectedColliderHits = PreformDetection(transform.position,
-                _detectionDistance, _detectionLayers);
+                detectionDistances, detectionLayers);
             if (DetectedColliderHits.Count <= 0)
                 InsideCollider 
                     = CheckIfInsideCollider(transform.position, 
-                    _detectionDistance, _detectionLayers);
+                    detectionDistances, detectionLayers);
         }
     }
     public bool CheckIfInsideCollider(Vector3 position, float distance, LayerMask mask)
@@ -75,7 +75,7 @@ public class HeadCollisionDetector : MonoBehaviour
         }
 
         Gizmos.color = c;
-        Gizmos.DrawWireSphere(transform.position, _detectionDistance);
+        Gizmos.DrawWireSphere(transform.position, detectionDistances);
 
         List<Vector3> directions = new() { transform.forward, transform.right, -transform.right };
         Gizmos.color = Color.magenta;

@@ -29,7 +29,7 @@ public class SocketManager : MonoBehaviour
     {
         LoadConfiguration();
 
-        // Subscribe to events for all socket interactors
+        // subscribe to events for all socket interactors
         foreach (var socket in socketInteractors)
         {
             socket.selectEntered.AddListener(OnSelectEntered);
@@ -39,7 +39,7 @@ public class SocketManager : MonoBehaviour
 
     private void OnDisable()
     {
-        // Unsubscribe from events for all socket interactors
+        // unsubscribe from events for all socket interactors
         foreach (var socket in socketInteractors)
         {
             socket.selectEntered.RemoveListener(OnSelectEntered);
@@ -67,7 +67,7 @@ public class SocketManager : MonoBehaviour
                     isTriggered = true;
                 }
 
-                // Check if all interactables are correctly socketed
+                // check if all interactables are correctly socketed
                 if (AreAllSocketsCorrect())
                 {
                     Debug.Log("All interactables are correctly socketed!");
@@ -89,7 +89,7 @@ public class SocketManager : MonoBehaviour
 
                 if (lockWrongSockets)
                 {
-                    // Force release the incorrect interactable
+                    // force release the incorrect interactable
                     socket.interactionManager.SelectExit(socket, args.interactableObject);
                 }
 
@@ -123,7 +123,7 @@ public class SocketManager : MonoBehaviour
     {
         foreach (var socket in socketInteractors)
         {
-            // Check the selected interactable in each socket
+            // check the selected interactable in each socket
             if (socket.GetOldestInteractableSelected() is XRGrabInteractable interactable)
             {
                 if (!socketToInteractableMapping.ContainsKeyValuePair(socket.name, interactable.name))
@@ -133,17 +133,16 @@ public class SocketManager : MonoBehaviour
             }
             else
             {
-                // If a socket is empty, not all sockets are correct
+                // if a socket is empty, not all sockets are correct
                 return false;
             }
         }
 
-        return true; // All sockets have the correct interactables
+        return true; // all sockets have the correct interactables
     }
 
     private void OnAllSocketsCorrect()
     {
-        // Logic for when all sockets are correctly filled
         completePuzzle.Invoke();
     }
 
@@ -159,7 +158,7 @@ public class SocketManager : MonoBehaviour
         string filePath = path.Replace(".json", "");
         TextAsset file = Resources.Load<TextAsset>(filePath);
 
-        // Return true if resource is found, otherwise false
+        // return true if resource is found, otherwise false
         return file != null;
     }
 

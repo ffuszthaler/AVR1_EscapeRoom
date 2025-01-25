@@ -17,13 +17,13 @@ public class PuzzleController : MonoBehaviour
     
     private void Start()
     {
-        // Initialize puzzleCompletionStatus array to false (all puzzles are not completed at the start)
+        // initialize puzzleCompletionStatus array to false (all puzzles are not completed at the start)
         puzzleCompletionStatus = new bool[totalPuzzles];
     }
 
     public void CompletePuzzle(string puzzleTag)
     {
-        // Find the puzzle index by its tag
+        // find the puzzle index by its tag
         for (int i = 0; i < totalPuzzles; i++)
         {
             if (puzzleTags[i] == puzzleTag)
@@ -38,19 +38,17 @@ public class PuzzleController : MonoBehaviour
             }
         }
 
-        // Check if all puzzles are complete
         CheckAllPuzzlesComplete();
     }
 
-    // Check if all puzzles are complete
+    // check if all puzzles are complete
     private void CheckAllPuzzlesComplete()
     {
         foreach (bool isComplete in puzzleCompletionStatus)
         {
-            if (!isComplete) return; // If any puzzle is incomplete, return
+            if (!isComplete) return; // if any puzzle is incomplete, return
         }
 
-        // If all puzzles are complete, trigger the event
         AllPuzzlesComplete();
     }
 
@@ -59,8 +57,6 @@ public class PuzzleController : MonoBehaviour
         // sound effect for all puzzles finished
         Debug.Log("### GAME FINISHED ###");
         
-        // change scene to winmenu
-        // SceneManager.LoadScene("WinMenu");
         sceneController.LoadScene("WinMenu");
     }
 }

@@ -9,13 +9,11 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
-        // SceneManager.LoadScene("Game");
         sceneController.LoadScene("Game");
     }
 
     public void BackToMenu()
     {
-        // SceneManager.LoadScene("StartMenu");
         sceneController.LoadScene("StartMenu");
     }
 

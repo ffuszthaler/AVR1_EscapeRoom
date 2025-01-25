@@ -5,13 +5,13 @@ using UnityEngine;
 public class HeadCollisionHandler : MonoBehaviour
 {
     [SerializeField]
-    private HeadCollisionDetector _detector;
+    private HeadCollisionDetector detector;
     [SerializeField]
-    private CharacterController _characterController;
+    private CharacterController characterController;
     [SerializeField]
     public float pushBackStrength = 1.0f;
     [SerializeField]
-    private FadeEffect _blackScreenFade;
+    private FadeEffect blackScreenFade;
 
     public bool IsClimbing
     {
@@ -32,22 +32,22 @@ public class HeadCollisionHandler : MonoBehaviour
 
     private void Update()
     {
-        if (_detector.InsideCollider)
+        if (detector.InsideCollider)
         {
-            _blackScreenFade.Fade(true);
+            blackScreenFade.Fade(true);
             return;
         }
-        if (_detector.DetectedColliderHits.Count <= 0)
+        if (detector.DetectedColliderHits.Count <= 0)
         {
-            _blackScreenFade.Fade(false);
+            blackScreenFade.Fade(false);
             return;
         }
         Vector3 pushBackDirection
-            = CalculatePushBackDirection(_detector.DetectedColliderHits);
+            = CalculatePushBackDirection(detector.DetectedColliderHits);
 
         Debug.DrawRay(transform.position, pushBackDirection.normalized, Color.magenta);
 
-        _characterController
+        characterController
             .Move(pushBackDirection.normalized * pushBackStrength * Time.deltaTime);
     }
 }

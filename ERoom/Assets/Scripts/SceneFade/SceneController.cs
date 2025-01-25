@@ -8,16 +8,16 @@ public class SceneController : MonoBehaviour
     [SerializeField]
     private float sceneFadeDuration;
 
-    private SceneFade _sceneFade;
+    private SceneFade sceneFade;
 
     private void Awake()
     {
-        _sceneFade = GetComponentInChildren<SceneFade>();
+        sceneFade = GetComponentInChildren<SceneFade>();
     }
 
     private IEnumerator Start()
     {
-        yield return _sceneFade.FadeInCoroutine(sceneFadeDuration);
+        yield return sceneFade.FadeInCoroutine(sceneFadeDuration);
     }
 
     public void LoadScene(string sceneName)
@@ -27,7 +27,7 @@ public class SceneController : MonoBehaviour
 
     private IEnumerator LoadSceneCoroutine(string sceneName)
     {
-        yield return _sceneFade.FadeOutCoroutine(sceneFadeDuration);
+        yield return sceneFade.FadeOutCoroutine(sceneFadeDuration);
         yield return SceneManager.LoadSceneAsync(sceneName);
     }
 }

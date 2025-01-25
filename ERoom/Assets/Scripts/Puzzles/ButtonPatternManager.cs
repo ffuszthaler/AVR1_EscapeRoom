@@ -7,16 +7,14 @@ public class ButtonPatternManager : MonoBehaviour
 {
     public UnityEvent completePuzzle;
     
-    [SerializeField] private GameObject[] buttons; // Assign your buttons in the Inspector
-    [SerializeField] private float sequenceTimeout = 5.0f; // Time to complete the sequence
+    [SerializeField] private GameObject[] buttons;
+    [SerializeField] private float sequenceTimeout = 5.0f;
 
     private int currentSequenceIndex = 0;
     private float timer;
 
     private void Start()
     {
-        // PuzzleMaster.Instance.onPuzzleComplete += OnSequenceComplete;
-        
         foreach (GameObject button in buttons)
         {
             var interactable = button.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
@@ -31,7 +29,7 @@ public class ButtonPatternManager : MonoBehaviour
 
     private void Update()
     {
-        // Reset sequence if the timeout is exceeded
+        // reset sequence if the timeout is exceeded
         if (currentSequenceIndex > 0)
         {
             timer += Time.deltaTime;
@@ -53,7 +51,7 @@ public class ButtonPatternManager : MonoBehaviour
             Debug.Log($"Button {currentSequenceIndex + 1} pressed correctly.");
             
             currentSequenceIndex++;
-            timer = 0.0f; // Reset timer for sequence
+            timer = 0.0f; // reset timer for sequence
 
             if (currentSequenceIndex >= buttons.Length)
             {
