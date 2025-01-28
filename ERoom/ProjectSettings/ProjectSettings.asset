@@ -140,10 +140,8 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 0.1.0
-  preloadedAssets:
-  - {fileID: -6018197740858001002, guid: 8d8c7972c2f8dfb41b0fd2242b4dc432, type: 2}
-  - {fileID: -6803856429271677336, guid: 20dafef9f59d8824fb0b4b012d8252d3, type: 2}
+  bundleVersion: 1.0.0
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -164,7 +162,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.UnityTechnologies.com.unity.template.urpblank
+    Android: at.ac.fhstp.avr.it241506.b_rooms
     Standalone: com.Unity-Technologies.com.unity.template.urp-blank
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
