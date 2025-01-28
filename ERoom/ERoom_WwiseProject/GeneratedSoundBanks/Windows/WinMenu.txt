@@ -3,5 +3,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	4127599014	Stop_WinMenuBG			\Default Work Unit\Stop_WinMenuBG	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	987809748	pastel-memories-of-a-hazy-morning-200486	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\pastel-memories-of-a-hazy-morning-200486_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinMenuBG\pastel-memories-of-a-hazy-morning-200486		28408416
+	987809748	pastel-memories-of-a-hazy-morning-200486	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\pastel-memories-of-a-hazy-morning-200486_08ED3C63.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinMenuBG\pastel-memories-of-a-hazy-morning-200486		4462102
 

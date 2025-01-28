@@ -9,13 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="594779704" Type="User" Language="SFX" Hash="{C9E26CBF-E2B6-0F93-317C-DA51100CE030}">
+		<SoundBank Id="594779704" Type="User" Language="SFX" Hash="{23CC9F90-1A5F-9296-950A-9E958EEE97D1}">
 			<ShortName>WinMenu</ShortName>
 			<Path>WinMenu.bnk</Path>
 			<Media>
 				<File Id="987809748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>pastel-memories-of-a-hazy-morning-200486.wav</ShortName>
-					<CachePath>SFX/pastel-memories-of-a-hazy-morning-200486_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/pastel-memories-of-a-hazy-morning-200486_08ED3C63.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -50,29 +50,29 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8BE48BC8-8111-31C0-B7D7-83CC1079D3AA}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B07272CF-AFB3-4B44-B752-7FBE3A921514}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="20954228" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>jug-pop-3-186888.wav</ShortName>
-					<CachePath>SFX/jug-pop-3-186888_818F3B66.wem</CachePath>
+					<CachePath>SFX/jug-pop-3-186888_31534B85.wem</CachePath>
 				</File>
 				<File Id="40037054" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>switch-button-106349.wav</ShortName>
-					<CachePath>SFX/switch-button-106349_818F3B66.wem</CachePath>
+					<CachePath>SFX/switch-button-106349_31534B85.wem</CachePath>
 				</File>
 				<File Id="567452290" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>error-5-199276.wav</ShortName>
-					<CachePath>SFX/error-5-199276_818F3B66.wem</CachePath>
+					<CachePath>SFX/error-5-199276_31534B85.wem</CachePath>
 				</File>
 				<File Id="621302694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009.wav</ShortName>
-					<CachePath>SFX/367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_08ED3C63.wem</CachePath>
 				</File>
 				<File Id="635439380" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>purchase-succesful-ingame-230550.wav</ShortName>
-					<CachePath>SFX/purchase-succesful-ingame-230550_818F3B66.wem</CachePath>
+					<CachePath>SFX/purchase-succesful-ingame-230550_31534B85.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -104,13 +104,13 @@
 				<Event Id="1877293712" Name="Stop_Interaction" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3944636910" Type="User" Language="SFX" Hash="{F6CEC0E4-0BB6-BDEA-004E-5D465B70E7E0}">
+		<SoundBank Id="3944636910" Type="User" Language="SFX" Hash="{8607F271-D133-9B9F-D9AC-E74ABE13BE41}">
 			<ShortName>StartMenu</ShortName>
 			<Path>StartMenu.bnk</Path>
 			<Media>
 				<File Id="340003423" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scary-clown-horror-172681.wav</ShortName>
-					<CachePath>SFX/scary-clown-horror-172681_818F3B66.wem</CachePath>
+					<CachePath>SFX/scary-clown-horror-172681_31534B85.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -123,5 +123,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B827DFFF-45A3-81E2-935F-74C683EE166B}</FileHash>
+	<FileHash>{E8145F22-193F-091C-01EA-D2D239B29CB7}</FileHash>
 </SoundBanksInfo>

@@ -7,9 +7,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3943614907	Play_Success			\Default Work Unit\Play_Success	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	20954228	InteractionPop	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\jug-pop-3-186888_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\InteractionPop		115296
-	40037054	switch-button-106349	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\switch-button-106349_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonPress\switch-button-106349		43872
-	567452290	error-5-199276	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\error-5-199276_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\error-5-199276		202848
-	621302694	ElectricHumming	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ElectricHumming		23134304
-	635439380	purchase-succesful-ingame-230550	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\purchase-succesful-ingame-230550_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\purchase-succesful-ingame-230550		179808
+	20954228	InteractionPop	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\jug-pop-3-186888_31534B85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\InteractionPop		13697
+	40037054	switch-button-106349	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\switch-button-106349_31534B85.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonPress\switch-button-106349		8820
+	567452290	error-5-199276	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\error-5-199276_31534B85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\error-5-199276		33269
+	621302694	ElectricHumming	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\367842__hz37__ambient-net3-gebouw-parkeerplaats-overdag-hvac-29-09-2009_08ED3C63.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ElectricHumming		4351619
+	635439380	purchase-succesful-ingame-230550	C:\Users\flofu\Desktop\AVR1_EscapeRoom\ERoom\ERoom_WwiseProject\.cache\Windows\SFX\purchase-succesful-ingame-230550_31534B85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\purchase-succesful-ingame-230550		36312
 
